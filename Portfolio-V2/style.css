@@ -1,0 +1,132 @@
+body p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+  }
+ .name-highlight{
+   color: aquamarine;
+ }
+ .half-width{
+   width: 40%;
+   float: left;
+   margin-left: 5%;
+   padding-left: 2%;
+ }
+ .half-width img{
+   width: 100%;
+ }
+ .top-banner{
+   background-repeat: no-repeat;
+   margin: 0;
+  background-image: url(images/top-banner.png) ;
+ }
+ section{
+   height: 500px;
+   padding-bottom: 100px;
+ }
+ .link-button{
+   text-decoration: none;
+   background-image: linear-gradient(45deg, rgb(0, 255, 157),rgb(0, 183, 255));
+   background-color: rgb(81, 167, 238);
+   padding: 10px 20px;
+   padding-bottom: 15px;
+   border-radius: 7px;
+   color: snow;
+   font-weight: 700;
+ }
+ p{
+   padding-bottom: 10px;
+ }
+ .mid-banner{
+   background-image: url(images/dream-bg.png);
+   background-repeat: no-repeat;
+   background-position: right;
+ }
+ .single-experience{
+    box-shadow:10px 10px 40px gray ;
+    border-radius: 10px;
+    
+  }
+  .project-area{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 25px;
+    
+  }
+  #first-project{
+    border-image-slice:1;
+  }
+  #second-project{
+   border-image-slice:1;
+  }
+  .tripple-width{
+      width: 25%;
+      float: left;
+      margin-left: 5%;
+      padding-left: 2%;
+  }
+  #third-project{
+    border-image-slice:1;   
+  }
+  .box-image{
+      width: 343.54px;
+      height: 213.23px;
+      padding-right: 15px;
+      margin-top: 20px;
+      margin-left: 3px;
+  }
+/* Area that holding the image and the text */
+.work-area {
+  background-image: url(images/work-1.png);
+  float: left right;
+  height: 50%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  margin-left: 25%;
+}
+.inquiry-box{
+  float: left;
+  font-size: 50px;
+  font-weight: 500;
+  padding-left: 7%;
+  margin-top: 1.78%;
+  color: aliceblue;
+}
+.chat{
+  float: left;
+  padding-left: 20%;
+  margin-top: 7%;
+}
+.lower{
+  padding-top: 300px;
+  height: 100px;
+}
+.lower-area{
+  text-align: center;
+  font-size: 25px;
+  color:darkgray;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+}
+.mail{
+  text-decoration: none;
+  color:cadetblue;
+  font-size: 20px;
+}
+.headline{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 90o;
+}
+.bonus-area{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
