@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <section>
+      <div class="container">
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>iPhone 11 128GB Black</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input type="text" class="form-control text-center" id="quantity" value="1">
+                           <button id="plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$<span id="phonePrice">1219</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>iPhone 11 Silicone Case - Black</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="caseMinus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input type="text" class="form-control text-center" id="caseQuantity" value="1">
+                           <button id="casePlus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5>$<span id="casePrice">59</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+
+                     <div class="col-md-8">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-md-4 status">
+                        <h5>$<span id="Subtotal">1,278</span></h5>
+                        <h5>$0</h5>
+                        <h5><span id="Total">1,278</span></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button type="button" class="btn btn-success check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script>
+      // + Event Handler For Phone
+      
+      const plusBtn = document.getElementById('plus').addEventListener('click', function totalPhonePrice () {
+         let phoneCount = updateQuantityPlus('quantity','phonePrice',1219);
+
+
+         
+          
+
+      })
+      // - Event Handler For phone   
+      const minusBtn = document.getElementById('minus').addEventListener('click', function () {
+         let phoneCount = updateQuantityMinus('quantity','phonePrice',1219);
+         console.log(phoneCount);
+         
+
+         
+      })
+      //+ Event Handler For Case
+      const casePlusBtn = document.getElementById('casePlus').addEventListener('click',function(){
+         let caseCount = updateQuantityPlus('caseQuantity','casePrice',59);
+
+      })
+      //- Event Handler For Phone
+      const caseMinusBtn =document.getElementById('caseMinus').addEventListener('click',function(){
+         let caseCount = updateQuantityMinus('caseQuantity','casePrice',59);
+      })
+
+
+      //The Function For All
+      function updateQuantityPlus(id1,id2,unitPrice){
+         const quantity = document.getElementById(id1).value;
+         const quantityNumber = parseFloat(quantity);
+         const newValue = (quantityNumber + 1);
+         document.getElementById(id1).value = newValue;
+
+         const phonePrice = document.getElementById(id2).innerText;
+         const currentPrice = parseFloat(phonePrice);
+         const newPhonePrice = unitPrice * newValue;
+         document.getElementById(id2).innerText = newPhonePrice;
+         
+      }
+      function updateQuantityMinus(id1,id2,unitPrice){
+         const quantity = document.getElementById(id1).value;
+         const quantityNumber = parseFloat(quantity);
+         const newValue = (quantityNumber - 1);
+         document.getElementById(id1).value = newValue;
+
+         const phonePrice = document.getElementById(id2).innerText;
+         const currentPrice = parseFloat(phonePrice);
+         const newPhonePrice = currentPrice-unitPrice; 
+         document.getElementById(id2).innerText = newPhonePrice;
+      }
+      
+      function calculateTotal(){
+         const phoneInput= document.getElementById('first-class-quantity').value;
+         const phoneCount = parseInt(phoneInput);
+
+         const caseInput =document.getElementById('economy-class-quantity').value;
+         const caseCount = parseInt(caseCount);
+
+         const totalPrice = phoneCount *150 + caseCount*100;
+         document.getElementById('Subtotal').value =totalPrice;
+      }
+      
+      
+      
+      
+      
+      
+      
+      // function SubtotalPhone(id,totalPhonePrice){
+      //    const currentSubtotal = document.getElementById(id).innerText;
+      //    const currentSubtotalNumber =parseFloat(currentSubtotal);
+      //    // console.log(currentSubtotal);
+      //    document.getElementById(id).innerText =phoneCount; 
+      // }
+   </script>
+</body>
+
+</html>

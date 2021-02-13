@@ -1,0 +1,14 @@
+.calendar ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 1em;
+}
+.calendar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 4em;
+    height: 125px;
+    background-color: lightgray;
+}

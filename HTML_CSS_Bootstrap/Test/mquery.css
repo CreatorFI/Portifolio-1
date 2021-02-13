@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction:row ;
+    max-width: 1200px;
+    justify-content: center;
+    height: 600px;
+    flex-wrap: wrap;
+
+}
+.food{
+    border: 3px solid lightskyblue;
+    border-radius: 25px;
+    margin: 10px;
+    width: 350px;
+}
+.food img{
+    width: 100%;
+}
+/* @media (max-width:760px){
+    .container .food {
+        background-color: red;
+    }
+}
+@media (max){ */
+
+}

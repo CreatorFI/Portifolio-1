@@ -1,0 +1,13 @@
+.calculator__keys { 
+    display: grid; 
+    float: left;
+    flex-wrap: wrap;
+    /* other necessary CSS */ 
+  }
+.calculator{
+    justify-content: center;
+}
+button{
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame{
+            position: relative;
+            height: 224px;
+            width: 300px;
+            border: 10px solid steelblue;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .photo-frame .photo img{
+            width: 100%;
+            /* border-radius: 10px; */
+        }
+        .photo-detail{
+            position: absolute;
+            height: 224px;
+            width: 300px;
+            top: 0;
+            display: none;
+        }
+        .photo-frame:hover .photo-detail{
+            /* display: block; */
+            color: thistle;
+            background-color: rgb(201, 212, 211);
+        }
+        .photo-frame:hover .photo img{
+            transform: scale(1.2);
+            transition: transform 1s;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>My Photo Book</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+               <img src="i9.png" alt="">
+            </div> 
+            <div class="photo-detail">
+                <h3>A Core I9 Processor</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate harum necessitatibus cupiditate ab rem ad, eos temporibus sequi laboriosam praesentium possimus et maxime omnis saepe sit. Amet nesciunt minus libero.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
